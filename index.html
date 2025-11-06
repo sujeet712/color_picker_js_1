@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        roboto: ["Roboto"]
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+
+<body>
+    <div id="colorPickerContainer" class="bg-[#e0e0e0] flex flex-col justify-center items-center h-80 ">
+        <div class="text-center">
+            <h1 class="text-4xl font-bold">Color Picker</h1>
+            <div>
+                <button onclick="fun1()" id="button1" class="border-solid border-black border-4 rounded-lg h-20 w-20 bg-[#e0e0e0] m-3">#e0e0e0</button>
+                <button onclick="fun2()" id="button2" class="border-solid border-black border-4 rounded-lg h-20 w-20 bg-[#6fcf97] m-3">#6fcf97</button>
+                <button onclick="fun3()" id="button3" class="border-solid border-black border-4 rounded-lg h-20 w-20 bg-[#56ccf2] m-3">#56ccf2</button>
+                <button onclick="fun4()" id="button4" class="border-solid border-black border-4 rounded-lg h-20 w-20 bg-[#bb6bd9] m-3">#bb6bd9</button>
+            </div>
+            <p class="bg-[black] text-white text-xl text-bold p-3">Background Color : <span id="selectedColorHexCode">#fffff</span></p>
+            <p>Try clicking on one of the colors above to change the background color of this page!</p>
+        </div>
+    </div>
+</body>
+
+</html>
